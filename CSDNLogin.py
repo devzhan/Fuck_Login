@@ -110,10 +110,8 @@ if __name__=="__main__":
     # Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:54.0) Gecko/20100101 Firefox/54.0
     }
     csdn = CSDN(headers=headers)
-    # account = input('请输入您的账号：')
-    # password = input('请输入您的密码:')
-    account="1427428160@qq.com"
-    password="zhanxiuwen"
+    account = input('请输入您的账号：')
+    password = input('请输入您的密码:')
     csdn.login(account,password)
     commentUrl='http://blog.csdn.net/waniu123/article/details/54580680'
     csdn.comment(commentUrl,"爬虫测试")
